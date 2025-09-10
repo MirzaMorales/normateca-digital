@@ -1,150 +1,153 @@
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import NormativeCard from "@/components/NormativeCard";
-import PrivacyNotice from "@/components/PrivacyNotice";
-import { Separator } from "@/components/ui/separator";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Scale, BookOpen, Shield, FileText, ExternalLink, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
-  const mexicanLaws = [
+  const quickAccess = [
     {
-      title: "Ley General de Protección de Datos Personales",
-      description: "Marco normativo para la protección de datos personales en posesión de sujetos obligados en México.",
-      purpose: "Garantizar la privacidad y el derecho a la autodeterminación informativa de las personas, estableciendo principios y obligaciones para el tratamiento de datos personales.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf",
-      infoLink: "https://www.inai.org.mx/SitePages/ifai-tema.aspx?t=proteccionDatosPersonales"
+      title: "Normativas Mexicanas",
+      description: "Leyes y reglamentos nacionales para protección de datos",
+      icon: Scale,
+      link: "/normativas-mexicanas",
+      color: "bg-primary/10 text-primary"
     },
     {
-      title: "Ley de Propiedad Industrial",
-      description: "Normativa que regula la protección de invenciones, marcas, diseños industriales y otros derechos de propiedad industrial.",
-      purpose: "Proteger la actividad industrial y comercial del país, promover y fomentar la actividad inventiva de aplicación industrial, el mejoramiento de la calidad de los productos y el aprovechamiento de los recursos naturales y humanos.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/50_010720.pdf",
-      infoLink: "https://www.gob.mx/impi"
+      title: "Estándares Internacionales",
+      description: "Marcos de referencia globales como ISO, COBIT, NIST",
+      icon: BookOpen,
+      link: "/estandares",
+      color: "bg-accent/50 text-accent-foreground"
     },
     {
-      title: "Ley Federal del Derecho de Autor",
-      description: "Protege los derechos de los autores, artistas intérpretes y ejecutantes, así como editores de fonogramas y organismos de radiodifusión.",
-      purpose: "Salvaguardar y promover el acervo cultural de la Nación; proteger los derechos de los autores, de los artistas intérpretes y ejecutantes, y promover la creatividad intelectual.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/122_010720.pdf",
-      infoLink: "https://www.indautor.gob.mx/"
-    },
-    {
-      title: "Código Penal Federal",
-      description: "Establece los delitos federales y sus sanciones, incluyendo delitos informáticos y contra la propiedad intelectual.",
-      purpose: "Definir y sancionar conductas delictivas que afectan el orden federal, incluyendo delitos relacionados con tecnologías de la información y propiedad intelectual.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/9_010720.pdf",
-      infoLink: "https://www.gob.mx/segob"
+      title: "Aviso de Privacidad",
+      description: "Información sobre el tratamiento de datos personales",
+      icon: Shield,
+      link: "/privacidad",
+      color: "bg-secondary/70 text-secondary-foreground"
     }
   ];
 
-  const internationalStandards = [
-    {
-      title: "ISO 27001 - Sistemas de Gestión de Seguridad de la Información",
-      description: "Estándar internacional para establecer, implementar, mantener y mejorar un sistema de gestión de seguridad de la información.",
-      purpose: "Proporcionar un enfoque sistemático para gestionar la información sensible de la empresa de manera que se mantenga segura, incluyendo procesos, controles, políticas, procedimientos y estructuras organizacionales.",
-      infoLink: "https://www.iso.org/isoiec-27001-information-security.html"
-    },
-    {
-      title: "ISO 17799 - Código de Práctica para la Gestión de Seguridad de la Información",
-      description: "Proporciona directrices y principios generales para iniciar, implementar, mantener y mejorar la gestión de seguridad de la información.",
-      purpose: "Establecer directrices y principios generales para la gestión de seguridad de la información en una organización, proporcionando un marco de referencia para implementar controles de seguridad.",
-      infoLink: "https://www.iso.org/standard/39612.html"
-    },
-    {
-      title: "COBIT - Control Objectives for Information and Related Technologies",
-      description: "Marco de gobierno y gestión de TI empresarial que ayuda a las organizaciones a crear valor óptimo desde TI.",
-      purpose: "Proporcionar un marco integral que ayuda a las empresas a lograr sus objetivos para el gobierno y la gestión de TI empresarial, asegurando que TI esté alineada con los objetivos del negocio.",
-      infoLink: "https://www.isaca.org/resources/cobit"
-    },
-    {
-      title: "NIST - National Institute of Standards and Technology",
-      description: "Marco de ciberseguridad desarrollado por NIST que proporciona estándares, directrices y mejores prácticas.",
-      purpose: "Mejorar la infraestructura de ciberseguridad crítica mediante el desarrollo de estándares, métricas, pruebas y procesos de validación para promover la innovación en seguridad.",
-      infoLink: "https://www.nist.gov/cyberframework"
-    },
-    {
-      title: "ITIL - Information Technology Infrastructure Library",
-      description: "Conjunto de prácticas detalladas para la gestión de servicios de TI que se centra en alinear los servicios de TI con las necesidades del negocio.",
-      purpose: "Proporcionar un enfoque sistemático para la entrega de servicios de TI de calidad, mejorando la eficiencia operacional y la satisfacción del cliente mediante mejores prácticas probadas.",
-      infoLink: "https://www.axelos.com/best-practice-solutions/itil"
-    }
+  const stats = [
+    { label: "Normativas Disponibles", value: "9", icon: FileText },
+    { label: "Estándares Internacionales", value: "5", icon: BookOpen },
+    { label: "Enlaces Oficiales", value: "14", icon: ExternalLink },
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <HeroSection />
-      
-      <main className="container mx-auto px-4 py-16 space-y-16">
-        {/* Aspectos Éticos y Legales */}
-        <section>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Aspectos Éticos y Legales del Manejo de la Información
-            </h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              El manejo ético y legal de la información implica el cumplimiento de principios fundamentales 
-              como la confidencialidad, integridad, disponibilidad, transparencia y responsabilidad en el 
-              tratamiento de datos personales y corporativos.
-            </p>
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Normativas Mexicanas */}
-        <section>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Normativas Mexicanas
-            </h2>
-            <p className="text-muted-foreground">
-              Marco jurídico nacional para la protección de datos y propiedad intelectual
-            </p>
+    <div className="space-y-8">
+      {/* Hero Section */}
+      <div className="bg-gradient-secondary rounded-xl p-8 lg:p-12 border border-border/50">
+        <div className="max-w-4xl">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="p-4 bg-primary/10 rounded-xl">
+              <Scale className="h-10 w-10 text-primary" />
+            </div>
+            <div>
+              <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-2">
+                Normateca Digital
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                Portal Centralizado de Normativas de Información
+              </p>
+            </div>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-6">
-            {mexicanLaws.map((law, index) => (
-              <NormativeCard key={index} {...law} />
-            ))}
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Estándares Internacionales */}
-        <section>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Estándares Internacionales de Manejo de Información
-            </h2>
-            <p className="text-muted-foreground">
-              Marcos de referencia globales para la gestión y seguridad de la información
-            </p>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
-            {internationalStandards.map((standard, index) => (
-              <NormativeCard key={index} {...standard} />
-            ))}
-          </div>
-        </section>
-
-        <Separator />
-
-        {/* Aviso de Privacidad */}
-        <PrivacyNotice />
-      </main>
-
-      <footer className="bg-gradient-primary text-primary-foreground py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm opacity-90">
-            © 2024 Normateca Digital - Portal Educativo de Normativas de Información
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-3xl">
+            Accede fácilmente a todas las normativas mexicanas e internacionales relacionadas con 
+            el manejo ético y legal de la información. Encuentra leyes, estándares y marcos de 
+            referencia organizados para facilitar el cumplimiento normativo.
           </p>
-          <p className="text-xs opacity-75 mt-2">
-            Desarrollado con fines académicos - Instituto Tecnológico Superior de Estudios
-          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <Button asChild size="lg" className="rounded-xl">
+              <Link to="/normativas-mexicanas">
+                Explorar Normativas
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="rounded-xl">
+              <Link to="/estandares">
+                Ver Estándares
+              </Link>
+            </Button>
+          </div>
         </div>
-      </footer>
+      </div>
+
+      {/* Stats Section */}
+      <div className="grid md:grid-cols-3 gap-6">
+        {stats.map((stat, index) => (
+          <Card key={index} className="text-center border-border/50 shadow-card hover:shadow-card-hover transition-smooth">
+            <CardContent className="pt-6">
+              <div className="flex justify-center mb-3">
+                <div className="p-3 bg-primary/10 rounded-xl">
+                  <stat.icon className="h-6 w-6 text-primary" />
+                </div>
+              </div>
+              <div className="text-3xl font-bold text-foreground mb-1">{stat.value}</div>
+              <p className="text-sm text-muted-foreground">{stat.label}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
+      {/* Quick Access */}
+      <div>
+        <h2 className="text-2xl font-bold text-foreground mb-6">Acceso Rápido</h2>
+        <div className="grid lg:grid-cols-3 gap-6">
+          {quickAccess.map((item, index) => (
+            <Card key={index} className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border-border/50 shadow-card">
+              <CardHeader>
+                <div className={`p-3 ${item.color} rounded-xl w-fit mb-3`}>
+                  <item.icon className="h-6 w-6" />
+                </div>
+                <CardTitle className="group-hover:text-primary transition-colors">
+                  {item.title}
+                </CardTitle>
+                <CardDescription>{item.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button asChild variant="ghost" className="w-full justify-between rounded-lg">
+                  <Link to={item.link}>
+                    Acceder
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* About Section */}
+      <Card className="border-border/50 shadow-card">
+        <CardHeader>
+          <CardTitle className="text-xl">¿Qué encontrarás en este portal?</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold mb-3 text-foreground">Normativas Mexicanas</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• Ley General de Protección de Datos Personales</li>
+                <li>• Ley de Propiedad Industrial</li>
+                <li>• Ley Federal de Derechos de Autor</li>
+                <li>• Código Penal Federal</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-3 text-foreground">Estándares Internacionales</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>• ISO 27001 - Gestión de Seguridad</li>
+                <li>• COBIT - Gobierno de TI</li>
+                <li>• NIST - Marco de Ciberseguridad</li>
+                <li>• ITIL - Gestión de Servicios</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
