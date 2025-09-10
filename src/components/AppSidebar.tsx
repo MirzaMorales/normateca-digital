@@ -103,7 +103,7 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild className="rounded-lg">
                     <NavLink to={item.url} end className={getNavCls}>
                       <item.icon className="h-4 w-4 shrink-0" />
-                      {!collapsed && <span className="truncate">{item.title}</span>}
+                      {!collapsed && <span className="truncate" style={{ color: "#79D1C3" }}>{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -132,7 +132,7 @@ export function AppSidebar() {
                         <SidebarMenuButton asChild size="sm" className="rounded-md">
                           <NavLink to={item.url} className={getNavCls}>
                             <item.icon className="h-3 w-3" />
-                            <span className="text-xs truncate">{item.title}</span>
+                            <span className="text-xs truncate" style={{ color: "#79D1C3" }}>{item.title}</span>
                           </NavLink>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
@@ -160,7 +160,7 @@ export function AppSidebar() {
                         <SidebarMenuButton asChild size="sm" className="rounded-md">
                           <NavLink to={item.url} className={getNavCls}>
                             <item.icon className="h-3 w-3" />
-                            <span className="text-xs truncate">{item.title}</span>
+                            <span className="text-xs truncate" style={{ color: "#79D1C3" }}>{item.title}</span>
                           </NavLink>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
