@@ -39,6 +39,7 @@ const AvisoPrivacidad = () => {
                   <p className="text-muted-foreground">Instituto Tecnológico Superior de Estudios</p>
                   <p className="text-sm text-muted-foreground mt-1">
                     Institución educativa dedicada a la formación en tecnologías de la información
+                    Delgado Manzano Carmen Catalina / Morales Lezama Mirza Natzielly
                   </p>
                 </div>
               </div>
@@ -49,7 +50,7 @@ const AvisoPrivacidad = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Correo Electrónico</h3>
-                  <p className="text-muted-foreground">contacto@normatecadigital.edu.mx</p>
+                  <p className="text-muted-foreground">demcarmen5@gmail.com / natzllyuni@gmail.com</p>
                   <p className="text-sm text-muted-foreground mt-1">
                     Canal principal de comunicación para consultas
                   </p>
@@ -156,8 +157,8 @@ const AvisoPrivacidad = () => {
               <div className="bg-card border border-border/50 rounded-xl p-6">
                 <h4 className="font-semibold mb-4">Contacto para Derechos ARCO</h4>
                 <div className="space-y-3 text-sm">
-                  <p><strong>Email:</strong> privacidad@normatecadigital.edu.mx</p>
-                  <p><strong>Teléfono:</strong> +52 (555) 123-4567</p>
+                  <p><strong>Email:</strong> demcarmen5@gmail.com / natzllyuni@gmail.com</p>
+                  <p><strong>Teléfono:</strong> +52 418 150 8382 +52 415 566 8881 </p>
                   <p><strong>Horario de Atención:</strong> Lunes a Viernes de 9:00 a 18:00 hrs</p>
                   <p><strong>Tiempo de respuesta:</strong> Máximo 20 días hábiles</p>
                 </div>

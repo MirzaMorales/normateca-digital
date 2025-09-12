@@ -87,8 +87,8 @@ const PrivacyNotice = () => {
                 así como limitar su uso o divulgación. Para ejercer estos derechos, puede contactarnos a través de:
               </p>
               <div className="bg-secondary p-4 rounded-lg">
-                <p className="text-sm"><strong>Email:</strong> privacidad@normatecadigital.edu.mx</p>
-                <p className="text-sm"><strong>Teléfono:</strong> +52 (555) 123-4567</p>
+                <p className="text-sm"><strong>Email:</strong> demcarmen5@gmail.com / natzllyuni@gmail.com</p>
+                <p className="text-sm"><strong>Teléfono:</strong> +52 418 150 8382 +52 415 566 8881</p>
                 <p className="text-sm"><strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 hrs</p>
               </div>
             </div>
