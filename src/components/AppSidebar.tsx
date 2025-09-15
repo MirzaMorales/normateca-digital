@@ -114,7 +114,7 @@ export function AppSidebar() {
 
         {!collapsed && (
           <>
-            <SidebarGroup>
+            {/* <SidebarGroup>
               <Collapsible open={normativasOpen} onOpenChange={setNormativasOpen}>
                 <CollapsibleTrigger asChild>
                   <SidebarMenuButton className="w-full justify-between hover:bg-sidebar-accent rounded-lg">
@@ -140,9 +140,9 @@ export function AppSidebar() {
                   </SidebarMenu>
                 </CollapsibleContent>
               </Collapsible>
-            </SidebarGroup>
+            </SidebarGroup> */}
 
-            <SidebarGroup>
+            {/* <SidebarGroup>
               <Collapsible open={estandaresOpen} onOpenChange={setEstandaresOpen}>
                 <CollapsibleTrigger asChild>
                   <SidebarMenuButton className="w-full justify-between hover:bg-sidebar-accent rounded-lg">
@@ -168,7 +168,7 @@ export function AppSidebar() {
                   </SidebarMenu>
                 </CollapsibleContent>
               </Collapsible>
-            </SidebarGroup>
+            </SidebarGroup> */}
           </>
         )}
       </SidebarContent>

@@ -9,28 +9,28 @@ const NormativasMexicanas = () => {
       description: "Marco normativo para la protección de datos personales en posesión de sujetos obligados en México.",
       purpose: "Garantizar la privacidad y el derecho a la autodeterminación informativa de las personas, estableciendo principios y obligaciones para el tratamiento de datos personales.",
       downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf",
-      infoLink: "https://www.inai.org.mx/SitePages/ifai-tema.aspx?t=proteccionDatosPersonales"
+      infoLink: "https://home.inai.org.mx/?page_id=3374"
     },
     {
       title: "Ley de Propiedad Industrial",
       description: "Normativa que regula la protección de invenciones, marcas, diseños industriales y otros derechos de propiedad industrial.",
       purpose: "Proteger la actividad industrial y comercial del país, promover y fomentar la actividad inventiva de aplicación industrial, el mejoramiento de la calidad de los productos.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/50_010720.pdf",
+      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPPI.pdf",
       infoLink: "https://www.gob.mx/impi"
     },
     {
       title: "Ley Federal del Derecho de Autor",
       description: "Protege los derechos de los autores, artistas intérpretes y ejecutantes, así como editores de fonogramas y organismos de radiodifusión.",
       purpose: "Salvaguardar y promover el acervo cultural de la Nación; proteger los derechos de los autores, de los artistas intérpretes y ejecutantes.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/122_010720.pdf",
+      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
       infoLink: "https://www.indautor.gob.mx/"
     },
     {
       title: "Código Penal Federal",
       description: "Establece los delitos federales y sus sanciones, incluyendo delitos informáticos y contra la propiedad intelectual.",
       purpose: "Definir y sancionar conductas delictivas que afectan el orden federal, incluyendo delitos relacionados con tecnologías de la información.",
-      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/9_010720.pdf",
-      infoLink: "https://www.gob.mx/segob"
+      downloadLink: "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+      infoLink: "https://legislacion.scjn.gob.mx/buscador/Paginas/wfArticuladoFast.aspx?q=BHGCbWrG7ukiUiW/WEuu/r7I8GQqjgVu6ZuRSZ5azXGOWo1Q5N9gNIOZuxOKHC96xIg9iy/nbl2sXH1Au6R4Pg=="
     }
   ];
 
