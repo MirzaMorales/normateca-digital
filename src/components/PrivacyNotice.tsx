@@ -50,10 +50,9 @@ const PrivacyNotice = () => {
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg mb-3">Datos que Recopilamos</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Datos de identificación (nombre, correo electrónico)</li>
                   <li>• Datos de navegación y uso del sitio web</li>
                   <li>• Registros de acceso a documentos normativos</li>
-                  <li>• Información académica e institucional</li>
+                  {/* <li>• Información académica e institucional</li> */}
                 </ul>
               </div>
             </div>
@@ -72,7 +71,7 @@ const PrivacyNotice = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-2">Finalidades Secundarias:</h4>
                   <ul className="space-y-1">
-                    <li>• Envío de actualizaciones normativas</li>
+                    {/* <li>• Envío de actualizaciones normativas</li> */}
                     <li>• Análisis estadístico de uso</li>
                     <li>• Mejora de servicios digitales</li>
                   </ul>

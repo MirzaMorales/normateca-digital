@@ -54,7 +54,7 @@ const standards = [
 ];
 
 export function AppSidebar() {
-  const { state } = useSidebar();
+  const { state, toggleSidebar } = useSidebar();
   const collapsed = state === "collapsed";
   const location = useLocation();
   const currentPath = location.pathname;
@@ -72,10 +72,20 @@ export function AppSidebar() {
       ? "bg-primary text-primary-foreground shadow-sm" 
       : "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-smooth";
 
+  // Maneja el hover para abrir/cerrar la sidebar
+  const handleMouseEnter = () => {
+    if (collapsed) toggleSidebar(); // Expande si está colapsada
+  };
+  const handleMouseLeave = () => {
+    if (!collapsed) toggleSidebar(); // Colapsa si está expandida
+  };
+
   return (
-    <Sidebar 
-      className={`${collapsed ? "w-16" : "w-72"} bg-gradient-sidebar border-r shadow-sidebar transition-smooth`}
+    <Sidebar
+      className={`${collapsed ? "w-50" : "w-72"} bg-gradient-sidebar border-r shadow-sidebar transition-smooth`}
       collapsible="icon"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <div className="flex items-center gap-3">
