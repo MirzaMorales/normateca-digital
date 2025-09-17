@@ -24,15 +24,7 @@ export default function Layout({ children }: LayoutProps) {
                   <p className="text-xs text-muted-foreground">Sistema de Gestión Documental</p>
                 </div>
               </div>
-              
-              <div className="flex items-center gap-2">
-                <Button variant="ghost" size="sm" className="rounded-lg">
-                  <Bell className="h-4 w-4" />
-                </Button>
-                <Button variant="ghost" size="sm" className="rounded-lg">
-                  <User className="h-4 w-4" />
-                </Button>
-              </div>
+             
             </div>
           </header>
 
