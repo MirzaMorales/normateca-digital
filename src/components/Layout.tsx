@@ -35,45 +35,58 @@ export default function Layout({ children }: LayoutProps) {
           </main>
           
           {/* Footer global */}
-          <footer className="w-full border-t border-[#5EABD6] bg-[#5EABD6] text-white py-8 px-6 text-center flex flex-col items-center font-sans">
-            <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              {/* Icono grande */}
-              <div className="flex justify-center items-center">
-                <img
-                  src="/favicon.ico"
-                  alt="Normateca Logo"
-                  className="h-24 w-24 rounded-full shadow-lg object-contain opacity-90"
-                />
-              </div>
-              {/* Columna izquierda */}
-              <div className="flex flex-col items-center md:items-start gap-2">
-                <span className="font-extrabold text-lg mb-1 tracking-wide">Normateca Digital</span>
-                <span className="text-sm">Original de: <span className="font-semibold">Dolores Hidalgo C.I.N</span></span>
-                <span className="text-sm">Propiedad de <span className="font-semibold">Mirza Morales y Catalina Delgado</span></span>
-                <span className="text-sm">Contacto: <span className="font-semibold">(+52) 415 566 8881</span></span>
-                <span className="text-sm">
-                  Correo:{" "}
-                  <a
-                    href="mailto:natzllyuni@gmail.com"
-                    className="underline hover:text-blue-200 transition font-medium"
-                  >
-                    natzllyuni@gmail.com
-                  </a>
-                </span>
-              </div>
-              {/* Columna derecha */}
-              <div className="flex flex-col items-center md:items-end gap-2">
-                <span className="font-semibold text-sm">© 2025 Instituto Tecnológico Superior de Estudios</span>
-                <a
-                  href="/privacidad"
-                  className="flex items-center gap-1 underline text-white hover:text-blue-200 transition text-sm font-medium"
-                >
-                  <Shield className="h-4 w-4" />
-                  Aviso de privacidad
-                </a>
-              </div>
-            </div>
-          </footer>
+          <footer className="w-full border-t border-[#5EABD6] bg-[#5EABD6] text-white py-8 px-6 font-sans">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+    
+    {/* Sección izquierda: Logo + Información */}
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-6 text-center md:text-left">
+      {/* Logo */}
+      <img
+        src="/favicon.ico"
+        alt="Normateca Logo"
+        className="h-20 w-20 rounded-full shadow-lg object-contain opacity-90 ml-4"
+      />
+
+      {/* Información */}
+      <div className="flex flex-col gap-1">
+        <span className="font-extrabold text-lg tracking-wide mb-1">Normateca Digital</span>
+        <span className="text-sm">
+          Original de: <span className="font-semibold">Dolores Hidalgo C.I.N, Gto.</span>
+        </span>
+        <span className="text-sm">
+          Propiedad de <span className="font-semibold">Mirza Morales y Catalina Delgado</span>
+        </span>
+        <span className="text-sm">
+          Contacto: <span className="font-semibold">(+52) 415 566 8881 / (+52) 418 150 8382</span>
+        </span>
+        <span className="text-sm">
+          Correo:{" "}
+          <a
+            href="mailto:natzllyuni@gmail.com"
+            className="underline hover:text-blue-200 transition font-medium"
+          >
+            natzllyuni@gmail.com / demcarmen5@gmail.com
+          </a>
+        </span>
+      </div>
+    </div>
+
+    {/* Sección derecha */}
+    <div className="flex flex-col items-center md:items-end gap-2 text-center md:text-right">
+      <span className="font-semibold text-sm">
+        © 2025 Instituto Tecnológico Superior de Estudios
+      </span>
+      <a
+        href="/privacidad"
+        className="flex items-center gap-1 underline text-white hover:text-blue-200 transition text-sm font-medium"
+      >
+        <Shield className="h-4 w-4" />
+        Aviso de privacidad
+      </a>
+    </div>
+    
+  </div>
+</footer>
         </div>
       </div>
     </SidebarProvider>

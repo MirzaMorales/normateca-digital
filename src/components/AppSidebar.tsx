@@ -81,7 +81,7 @@ export function AppSidebar() {
                     <NavLink to={item.url} end className={getNavCls}>
                       <item.icon className="h-5 w-5 shrink-0" />
                       {!collapsed && (
-                        <span className="truncate" style={{ color: "#79D1C3" }}>
+                        <span className="truncate" style={{ color: "#252121ff" }}>
                           {item.title}
                         </span>
                       )}
