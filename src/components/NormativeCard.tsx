@@ -13,7 +13,7 @@ interface NormativeCardProps {
 
 const NormativeCard = ({ title, description, purpose, downloadLink, infoLink, isExternal = true }: NormativeCardProps) => {
   return (
-    <Card className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border-0 shadow-card">
+    <Card className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border-primary/60, shadow-card">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-2 mb-2">
           <FileText className="h-5 w-5 text-primary" />

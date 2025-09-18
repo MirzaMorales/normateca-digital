@@ -26,7 +26,7 @@ const EstandaresInternacionales = () => {
       title: "NIST - National Institute of Standards and Technology",
       description: "Marco de ciberseguridad desarrollado por NIST que proporciona estándares, directrices y mejores prácticas.",
       purpose: "Mejorar la infraestructura de ciberseguridad crítica mediante el desarrollo de estándares, métricas, pruebas y procesos de validación.",
-      infoLink: "https://www.nist.gov/cyberframework"
+      infoLink: "https://www.nist.gov/data"
     },
     {
       title: "ITIL - Information Technology Infrastructure Library",
@@ -58,7 +58,7 @@ const EstandaresInternacionales = () => {
   ];
 
   return (
-    <div className="space-y-8">
+    <div className="pl-9 space-y-8">
       {/* Header Section */}
       <div className="bg-gradient-secondary rounded-xl p-8 border border-border/50">
         <div className="flex items-center gap-4 mb-6">
