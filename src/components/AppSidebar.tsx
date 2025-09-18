@@ -47,7 +47,9 @@ export function AppSidebar() {
 
   return (
     <Sidebar
-      className={`${collapsed ? "w-16" : "w-72"} bg-gradient-sidebar border-r shadow-sidebar transition-smooth`}
+
+      className={`${collapsed ? "w-50" : "w-72"} bg-gradient-sidebar border-r shadow-sidebar transition-smooth`}
+
       collapsible="icon"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -90,6 +92,66 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+
+        {!collapsed && (
+          <>
+            {/* <SidebarGroup>
+              <Collapsible open={normativasOpen} onOpenChange={setNormativasOpen}>
+                <CollapsibleTrigger asChild>
+                  <SidebarMenuButton className="w-full justify-between hover:bg-sidebar-accent rounded-lg">
+                    <div className="flex items-center gap-2">
+                      <Scale className="h-4 w-4" />
+                      <span>Normativas MX</span>
+                    </div>
+                    <ChevronDown className={`h-4 w-4 transition-transform ${normativasOpen ? 'rotate-180' : ''}`} />
+                  </SidebarMenuButton>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-1">
+                  <SidebarMenu className="ml-4 space-y-1">
+                    {mexicanLaws.map((item) => (
+                      <SidebarMenuItem key={item.title}>
+                        <SidebarMenuButton asChild size="sm" className="rounded-md">
+                          <NavLink to={item.url} className={getNavCls}>
+                            <item.icon className="h-3 w-3" />
+                            <span className="text-xs truncate" style={{ color: "#79D1C3" }}>{item.title}</span>
+                          </NavLink>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                    ))}
+                  </SidebarMenu>
+                </CollapsibleContent>
+              </Collapsible>
+            </SidebarGroup> */}
+
+            {/* <SidebarGroup>
+              <Collapsible open={estandaresOpen} onOpenChange={setEstandaresOpen}>
+                <CollapsibleTrigger asChild>
+                  <SidebarMenuButton className="w-full justify-between hover:bg-sidebar-accent rounded-lg">
+                    <div className="flex items-center gap-2">
+                      <BookOpen className="h-4 w-4" />
+                      <span>Estándares</span>
+                    </div>
+                    <ChevronDown className={`h-4 w-4 transition-transform ${estandaresOpen ? 'rotate-180' : ''}`} />
+                  </SidebarMenuButton>
+                </CollapsibleTrigger>
+                <CollapsibleContent className="mt-1">
+                  <SidebarMenu className="ml-4 space-y-1">
+                    {standards.map((item) => (
+                      <SidebarMenuItem key={item.title}>
+                        <SidebarMenuButton asChild size="sm" className="rounded-md">
+                          <NavLink to={item.url} className={getNavCls}>
+                            <item.icon className="h-3 w-3" />
+                            <span className="text-xs truncate" style={{ color: "#79D1C3" }}>{item.title}</span>
+                          </NavLink>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                    ))}
+                  </SidebarMenu>
+                </CollapsibleContent>
+              </Collapsible>
+            </SidebarGroup> */}
+          </>
+        )}
       </SidebarContent>
 
       <SidebarFooter className="border-t border-sidebar-border p-3">

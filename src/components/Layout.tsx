@@ -18,7 +18,6 @@ export default function Layout({ children }: LayoutProps) {
           <header className="h-16 border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
             <div className="flex items-center justify-between h-full px-6">
               <div className="flex items-center gap-4">
-                <SidebarTrigger className="p-2 hover:bg-accent rounded-lg transition-smooth" />
                 <div className="hidden md:block">
                   <h1 className="font-semibold text-foreground">Portal de Normativas</h1>
                   <p className="text-xs text-muted-foreground">Sistema de Gestión Documental</p>

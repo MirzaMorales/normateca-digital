@@ -79,19 +79,11 @@ const AvisoPrivacidad = () => {
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-2">
                   <div className="h-1.5 w-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
-                  <span><strong>Datos de identificación:</strong> Nombre completo, correo electrónico, teléfono</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                   <span><strong>Datos de navegación:</strong> Dirección IP, navegador, tiempo de sesión</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="h-1.5 w-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
                   <span><strong>Registros de acceso:</strong> Documentos consultados, fecha y hora de acceso</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="h-1.5 w-1.5 bg-primary rounded-full mt-2 shrink-0"></div>
-                  <span><strong>Información académica:</strong> Institución de procedencia, área de estudio</span>
                 </li>
               </ul>
             </div>
@@ -115,10 +107,6 @@ const AvisoPrivacidad = () => {
                     <div className="h-1.5 w-1.5 bg-accent-foreground rounded-full mt-2 shrink-0"></div>
                     <span>Cumplir con obligaciones legales y regulatorias</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <div className="h-1.5 w-1.5 bg-accent-foreground rounded-full mt-2 shrink-0"></div>
-                    <span>Verificar la autenticidad de usuarios</span>
-                  </li>
                 </ul>
               </div>
               <div className="bg-secondary/60 rounded-lg p-6">
@@ -126,19 +114,11 @@ const AvisoPrivacidad = () => {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
                     <div className="h-1.5 w-1.5 bg-secondary-foreground rounded-full mt-2 shrink-0"></div>
-                    <span>Envío de actualizaciones sobre nuevas normativas</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="h-1.5 w-1.5 bg-secondary-foreground rounded-full mt-2 shrink-0"></div>
                     <span>Análisis estadístico de uso del portal</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <div className="h-1.5 w-1.5 bg-secondary-foreground rounded-full mt-2 shrink-0"></div>
                     <span>Mejora continua de servicios digitales</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="h-1.5 w-1.5 bg-secondary-foreground rounded-full mt-2 shrink-0"></div>
-                    <span>Investigación académica e institucional</span>
                   </li>
                 </ul>
               </div>
@@ -163,7 +143,7 @@ const AvisoPrivacidad = () => {
                   <p><strong>Tiempo de respuesta:</strong> Máximo 20 días hábiles</p>
                 </div>
               </div>
-              <div className="bg-card border border-border/50 rounded-xl p-6">
+              {/* <div className="bg-card border border-border/50 rounded-xl p-6">
                 <h4 className="font-semibold mb-4">Documentos Requeridos</h4>
                 <div className="space-y-2 text-sm">
                   <p>• Solicitud por escrito especificando el derecho a ejercer</p>
@@ -171,7 +151,7 @@ const AvisoPrivacidad = () => {
                   <p>• Comprobante de domicilio reciente</p>
                   <p>• Documentos que acrediten la personalidad (si es representante)</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
