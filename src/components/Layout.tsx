@@ -34,8 +34,14 @@ export default function Layout({ children }: LayoutProps) {
           </main>
           
           {/* Footer global */}
-          <footer className="w-full border-t border-border bg-card/70 text-xs text-muted-foreground py-3 text-center">
-            © 2025 Instituto Tecnológico Superior de Estudios
+          <footer className="w-full border-t border-blue-700 bg-blue-700 text-white py-3 text-center flex flex-col items-center gap-1">
+            <span>© 2025 Instituto Tecnológico Superior de Estudios</span>
+            <a
+              href="/privacidad"
+              className="underline text-white hover:text-blue-200 transition"
+            >
+              Aviso de privacidad
+            </a>
           </footer>
         </div>
       </div>
