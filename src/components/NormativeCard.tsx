@@ -13,7 +13,7 @@ interface NormativeCardProps {
 
 const NormativeCard = ({ title, description, purpose, downloadLink, infoLink, isExternal = true }: NormativeCardProps) => {
   return (
-    <Card className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border-primary/60, shadow-card">
+    <Card className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 border-primary/60 shadow-card relative overflow-hidden">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-2 mb-2">
           <FileText className="h-5 w-5 text-primary" />
@@ -24,15 +24,16 @@ const NormativeCard = ({ title, description, purpose, downloadLink, infoLink, is
         <CardDescription className="text-sm leading-relaxed">
           {description}
         </CardDescription>
-      </CardHeader>
-      <CardContent className="pt-0">
+        {/* Propósito solo visible en hover, debajo de la descripción */}
         {purpose && (
-          <div className="mb-4 p-3 bg-secondary rounded-lg">
-            <p className="text-sm font-medium text-secondary-foreground">
+          <div className="max-h-0 group-hover:max-h-40 opacity-0 group-hover:opacity-100 transition-all duration-300 overflow-hidden">
+            <p className="mt-3 text-sm font-medium text-secondary-foreground bg-secondary/60 rounded p-2">
               <span className="font-semibold">Propósito:</span> {purpose}
             </p>
           </div>
         )}
+      </CardHeader>
+      <CardContent className="pt-0">
         <div className="flex flex-col gap-2">
           {downloadLink && (
             <Button asChild variant="default" size="sm" className="w-full">
