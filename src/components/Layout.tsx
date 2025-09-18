@@ -23,6 +23,7 @@ export default function Layout({ children }: LayoutProps) {
                   <p className="text-xs text-muted-foreground">Sistema de Gestión Documental</p>
                 </div>
               </div>
+             
             </div>
           </header>
 

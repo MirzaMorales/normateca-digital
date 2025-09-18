@@ -3,7 +3,7 @@ import { Shield, Mail, Globe, Building, FileCheck, Clock } from "lucide-react";
 
 const AvisoPrivacidad = () => {
   return (
-    <div className="space-y-8">
+    <div className="pl-9 space-y-8">
       {/* Header Section */}
       <div className="bg-gradient-secondary rounded-xl p-8 border border-border/50">
         <div className="flex items-center gap-4 mb-6">
